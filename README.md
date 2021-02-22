@@ -119,4 +119,5 @@ Seeding data into the database is handled by the seed.js file. Running the `npm 
 * Redux
 * Node
 * Express
-* MongoDB
+* SQLite
+* Sequelize
