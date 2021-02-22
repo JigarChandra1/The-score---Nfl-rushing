@@ -1,0 +1,25 @@
+version: "3.7"
+services:
+  react-app:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    stdin_open: true
+    ports:
+      - "3000:3000"
+    networks:
+      - nfl-rushing
+  api-server:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment: 
+      - SERVER_PORT=8000
+    ports:
+      - "8000:8000"
+    networks:
+      - nfl-rushing
+    command: bash -c "npm run seed && npm run start"
+networks:
+  nfl-rushing:
+    driver: bridge
