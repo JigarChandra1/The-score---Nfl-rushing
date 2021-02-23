@@ -67,7 +67,7 @@ If you have any questions regarding requirements, do not hesitate to email your 
 
 You can run the project locally without docker by running the following commands:
 
-# Install Front-end
+### Install Front-end
 
 ```
 cd frontend
@@ -75,7 +75,7 @@ npm install
 npm run start
 ```
 
-#### Install Back-end
+### Install Back-end
 
 ```
 cd backend
