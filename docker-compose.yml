@@ -19,7 +19,7 @@ services:
       - "8000:8000"
     networks:
       - nfl-rushing
-    command: bash -c "npm run seed && npm run start"
+    command: bash -c "npm run start"
 networks:
   nfl-rushing:
     driver: bridge
